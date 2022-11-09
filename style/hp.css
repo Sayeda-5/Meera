@@ -1,0 +1,100 @@
+body {
+    margin: 50px auto;
+
+}
+#navbar {
+    display: flex;
+    
+    
+ }
+ .nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid ; */
+
+ }
+ .nav>div:nth-child(1)>input{
+    /* padding: 10%; */
+    border:0px;
+
+ }
+ .nav>div:nth-child(3){
+    display: flex;
+    width: 300px;
+    /* border: 1px solid; */
+    justify-content: space-around;
+ }
+ .nav>div:nth-child(3)>div>a>img{
+    height: 70px
+ }
+ 
+#logo{
+    width: 250px;
+    height: 75px;
+}
+
+#seven{
+    display: flex;
+    justify-content: space-evenly;
+}
+#mid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+h2{
+    text-align: center;
+}
+#mid>div>img{
+    width: 350px;
+    padding-left: 10px;
+}
+#bottom{
+    margin-top: 50px;
+    width: 100%;
+    height: 170px;
+    background-color: rgba(128, 128, 128, 0.299);
+    text-align: center;
+
+}
+#bottom>div{
+    display: flex;
+    justify-content: center;
+}
+#bottom>div>input{
+    width: 400px;
+    height: 50px;
+    border: 0px;
+}
+#bottom>div>button{
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+    border: 0px;
+    background-color: black;
+    color: aliceblue;
+}
+#info{
+    text-align: center;
+}
+#info>h4{
+    color: rgb(115, 111, 111);
+}
+
+#info>p{
+    color: rgba(97, 97, 97, 0.633);
+}
+#three{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+#contact{
+    width: 50%;
+    /* border: 1px solid black; */
+    display: flex;
+    margin: 50px auto;
+    justify-content: space-evenly;
+}
