@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEERA/-login</title>
+    
+</head>
+<body>
+    <form action="">
+        <input type="email" name="" placeholder="write your email here" id="email">
+    <input type="number" name="" placeholder="Phone Number" id="num">
+    <input type="password" name="" placeholder="password" id="password">
+    <input type="submit" placeholder="submit" value="">
+    </form>    
+</body>
+</html>
+<script>
+        let addform = document.querySelector("form")
+    let LSdata= [];
+
+    addform.addEventListener("submit", login)
+   function login(event) {
+        event.preventDefault();
+
+        let obj={
+        email: addform.email.value,
+        phone: addform.num.value,
+        pass: addform.password.value
+        }
+        
+     
+    if(obj.email==""||obj.phone=="" || obj.pass==""){
+        alert ("Fill all the infomation")
+    }else{
+           LSdata.push(obj);
+    localStorage.setItem("signup", JSON.stringify(LSdata)) 
+     window.location.href='registered.html'
+    }
+
+    }
+</script>

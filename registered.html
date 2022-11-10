@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn</title>
+</head>
+<body>
+    <form action="">
+    <input type="email" name="" placeholder="write your email here" id="email">
+    <input type="password" name="" placeholder="password" id="password">
+    <input type="submit" placeholder="submit" value="">
+    </form> 
+</body>
+</html>
+<script>
+    let addform = document.querySelector("form");
+
+addform.addEventListener("submit", login)
+function login(event){
+    event.preventDefault()
+
+    let obj={
+        email: addform.email.value,
+        pass: addform.password.value
+    }
+    let mail= JSON.parse(localStorage.getItem("signup"))
+
+    mail.forEach(function(e){
+        if(obj.email==e.email){
+            if(obj.pass==e.pass){
+                alert("Successful")
+                window.location.href='HomePage.html'
+            }
+            else{
+                alert("Failed")
+            }
+        }
+        else{
+            alert("Invalid credentials")
+        }
+    })
+}
+</script>
