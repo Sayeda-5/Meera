@@ -1,0 +1,47 @@
+body {
+    margin: 50px auto;
+    padding: 15px;
+
+}
+#navbar {
+    display: flex;
+    
+    
+ }
+ .nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid ; */
+
+ }
+ .nav>div:nth-child(1)>input{
+    /* padding: 10%; */
+    border:0px;
+
+ }
+ .nav>div:nth-child(3){
+    display: flex;
+    width: 300px;
+    /* border: 1px solid; */
+    justify-content: space-around;
+ }
+ .nav>div:nth-child(3)>div>a>img{
+    height: 70px
+ }
+ 
+#logo{
+    width: 250px;
+    height: 75px;
+}
+
+#seven{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#pro{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
