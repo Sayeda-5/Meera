@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MEERA/-homepage</title>
-    <link rel="stylesheet" href="hp.css">
+    <link rel="stylesheet" href="style/hp.css">
 </head>
 <body>
     <div id="navbar">
@@ -23,13 +23,13 @@
                 </a>
                </div>
                <div>
-                <a href="">
+                <a href="cart.html">
                     <img src="https://img.icons8.com/ios/2x/shopping-cart.png" alt="Cart">
                 </a>
                </div>
                <div>
-                <a href="">
-                    <img src="https://img.icons8.com/cotton/2x/gender-neutral-user--v3.png" alt="">
+                <a href="login.html">
+                    <img src="https://img.icons8.com/cotton/2x/gender-neutral-user--v3.png" alt="login">
                 </a>
                </div>
             </div>
@@ -45,9 +45,7 @@
         <h3>TOOLS & BRUSHES</h3>
         <h3>BRANDS</h3>
     </div>
-    <hr>
-    <img style="width: 100%" height="450px"; src="https://logan.nnnow.com/content/dam/nnnow-project/03-aug-2022/Olaplex_Offerpagedesktop.jpg" alt="">
-    <hr>
+    <div class="icont"></div>
     <img style="width: 100%" height="275px" src="https://logan.nnnow.com/content/dam/nnnow-project/03-nov-2022/1920x460px-ClarinsOffersSephora.jpg" alt="">
 
     <!-- mid -->
@@ -119,3 +117,30 @@
 
 </body>
 </html>
+<script>
+    let arr=[
+        "https://logan.nnnow.com/content/dam/nnnow-project/04-nov-2022/SC_Offerpagedesktop.jpg",
+        "https://logan.nnnow.com/content/dam/nnnow-project/03-aug-2022/Olaplex_Offerpagedesktop.jpg",
+        "https://logan.nnnow.com/content/dam/nnnow-project/13-sep-2022/se/SephoraandExclusives_TopBannerdesktop(1).jpg"
+    ]
+
+    let image=document.createElement("img");
+    image.style.width ="100%"
+    image.style.height ="450px"
+    document.querySelector(".icont").append(image);
+
+    let n= arr.length
+    let a=0;
+    slider(a);
+    function slider(e){
+        setInterval(function(){
+            if(e<n){
+                image.src=arr[e];
+                e++
+            }
+            if(e==n){
+                e=0;
+            }
+        },1000)
+    }
+</script>
