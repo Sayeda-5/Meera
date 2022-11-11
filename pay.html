@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+</head>
+<body>
+    <div>
+        <form action="" id="form">
+            <div>
+                <input type="text" placeholder="Enter name" id="name">
+            </div>
+            <div>
+                <input type="number" placeholder="Enter Card Number" id="card">
+            </div>
+            <div>
+                <input type="number" placeholder="Enter your CVV" id="cvv">
+            </div>
+            <div>
+                <input type="date" value="02/24" id="expiry">
+            </div>
+            <div>
+                <input type="submit" value="SUBMIT">
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
+<script>
+    let form= document.querySelector("#form");
+    let LSdata= JSON.parse(localStorage.getItem("payment"))||[];
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
+
+        let obj={
+            name:form.name.value,
+            card:form.card.value,
+            cvv:form.cvv.value,
+            expiry:form.expiry.value
+        }
+        if(obj.name==""|| obj.card==""|| obj.cvv==""|| obj.expiry==""){
+            alert("Please Fill all the Details")
+        }else{
+            LSdata.push(obj);
+            localStorage.setItem("payment", JSON.stringify(LSdata))
+            window.location.href="HomePage.html"
+        }
+    })
+</script>
