@@ -44,4 +44,7 @@ body {
 #pro{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    text-align: center;
+    padding: 10px;
 }

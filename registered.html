@@ -5,13 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LogIn</title>
+    <style>
+        body {
+            margin: 50px auto;
+        }
+        
+        form>div>input{
+            width: 75%;
+            height: 50px;
+            border: 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; 
+            margin: 20px;
+            text-align: center;
+        }
+        form>div:nth-child(3)>input{
+            background-color: lightblue;
+            color: white;
+        }
+    </style>
 </head>
 <body>
+
+    
     <form action="">
-    <input type="email" name="" placeholder="write your email here" id="email">
-    <input type="password" name="" placeholder="password" id="password">
-    <input type="submit" placeholder="submit" value="">
-    </form> 
+        <div><input type="email" name="" placeholder="write your email here" id="email"> 
+        </div>
+        <div>
+                <input type="password" name="" placeholder="password" id="password">
+        </div>
+        <div>
+                <input type="submit" placeholder="submit" value="SUBMIT">
+        </div>
+    
 </body>
 </html>
 <script>

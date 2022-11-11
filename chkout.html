@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout/- MEERA</title>
+    <style>
+        body {
+    margin: 50px auto;
+
+}
+#navbar {
+    display: flex;
+    
+    
+ }
+ .nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid ; */
+
+ }
+ .nav>div:nth-child(1)>input{
+    /* padding: 10%; */
+    border:0px;
+
+ }
+ .nav>div:nth-child(3){
+    display: flex;
+    width: 300px;
+    /* border: 1px solid; */
+    justify-content: space-around;
+ }
+ .nav>div:nth-child(3)>div>a>img{
+    height: 70px
+ }
+ 
+#logo{
+    width: 250px;
+    height: 75px;
+}
+#cont{
+    text-align: center;
+    display: grid;
+    gap: 30px;
+    color: rgb(189, 149, 160);
+    
+}
+#cont>div>input{
+    width: 75%;
+    height: 50px;
+    border: 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#cont>div>a>button{
+    background-color: lightblue;
+    color: aliceblue;
+    width: 50%;
+    border: 0px;
+    height: 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+
+}
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div class="nav">
+            <div>
+                <input type="search" placeholder="Search MEERA" id="search">
+            </div>
+            <div>
+                <a href="HomePage.html"><img src="meera/meera.jpg" alt="logo of MEERA" id="logo"></a>
+            </div>
+            <div>
+               <div>
+                <a href="" target="_blank">
+                    <img src="https://img.icons8.com/ios-glyphs/2x/hearts.png" alt="Wishlist">
+                </a>
+               </div>
+               <div>
+                <div>
+                    <a href="cart.html">
+                        <img src="https://img.icons8.com/ios/2x/shopping-cart.png" alt="Cart">
+                    </a>
+                   </div>
+               </div>
+               <div>
+                <a href="login.html">
+                    <img src="https://img.icons8.com/cotton/2x/gender-neutral-user--v3.png" alt="login">
+                </a>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cont">
+        <div><h1>Checkout</h1></div>
+        <div>        
+            <input type="text" name="" placeholder="Your Name" id="name">
+       </div>
+       <div>
+            <input type="number" name="" id="num" placeholder="Your Phone Number">
+       </div>
+       <div>
+            <input type="text" id="address" placeholder="Your Address">
+
+       </div>
+       <div>
+                <a href="pay.html"><button id="pay">CLICK HERE TO PAY</button></a>
+
+       </div>
+        
+    </div>
+</body>
+</html>
+<script>
+    let pay= document.querySelector("#pay")
+    pay.addEventListener("click", function(){
+        windaw.loaction.hrf= "pay.html"
+    })
+</script>
