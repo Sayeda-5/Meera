@@ -1,0 +1,71 @@
+ol.track {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ol.track li {
+    display: inline-block;
+    text-align: center;
+    line-height: 3.8em;
+}
+
+ol.track[data-t-steps="2"] li { width: 48%; }
+ol.track[data-t="3"] li { width: 34%; }
+ol.track[data-t-steps="4"] li { width: 25%; }
+ol.track[data-t-steps="5"] li { width: 20%; }
+ol.track[data-t-steps="6"] li { width: 17%; }
+ol.track[data-t-steps="7"] li { width: 15%; }
+ol.track[data-t-steps="8"] li { width: 11%; }
+ol.track[data-t-steps="9"] li { width: 12%; }
+
+ol.track li.t-done {
+    color: black;
+    border-bottom: 4px solid lightblue;
+}
+ol.track li.t-todo {
+    color: silver; 
+    border-bottom: 4px solid silver;
+}
+
+ol.track li:after {
+    content: "\00a0\00a0";
+}
+ol.track li:before {
+    position: relative;
+    bottom: -2.5em;
+    float: left;
+    left: 50%;
+    line-height: 1em;
+}
+ol.track li.t-done:before {
+    content: "\2713";
+    color: white;
+    background-color: lightblue;
+    height: 2.2em;
+    width: 2.2em;
+    line-height: 2.2em;
+    border: none;
+    border-radius: 2.2em;
+}
+ol.track li.t-todo:before {
+    content: "\039F";
+    color: silver;
+    background-color: white;
+    font-size: 2.2em;
+    bottom: -1.3em;
+}
+a>button{
+    background-color: lightblue;
+    color: aliceblue;
+    margin: 30px;
+    height: 30px;
+    width: 100px;
+    border: 0ch;
+    text-align: center;
+}
+a>button:hover{
+    background-color: pink;
+
+}
+

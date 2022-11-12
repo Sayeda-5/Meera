@@ -1,0 +1,63 @@
+
+body {
+margin: 50px auto;
+
+}
+#navbar {
+display: flex;
+
+
+}
+.nav{
+width: 100%;
+display: flex;
+justify-content: space-between;
+/* border: 1px solid ; */
+
+}
+.nav>div:nth-child(1)>input{
+/* padding: 10%; */
+border:0px;
+
+}
+.nav>div:nth-child(3){
+display: flex;
+width: 300px;
+/* border: 1px solid; */
+justify-content: space-around;
+}
+.nav>div:nth-child(3)>div>a>img{
+height: 70px
+}
+
+#logo{
+width: 250px;
+height: 75px;
+}
+#cont{
+text-align: center;
+display: grid;
+gap: 30px;
+color: rgb(189, 149, 160);
+
+}
+#cont>div>form>div{
+margin-bottom: 20px;
+}
+#cont>div>form>div>input{
+width: 75%;
+height: 50px;
+border: 0px;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#cont>div>form>div>a>button{
+background-color: lightblue;
+color: aliceblue;
+width: 50%;
+border: 0px;
+height: 50px;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#cont>div>form>div>a>button:hover{
+background-color: pink;
+}

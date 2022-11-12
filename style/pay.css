@@ -1,0 +1,25 @@
+body{
+    margin: 50px auto;
+}
+#cont{
+    text-align: center;
+    display: grid;
+    gap: 30px;
+    
+}
+#cont>form>div>input{
+    align-items: center;
+    width: 60%;
+    margin-bottom: 15px;
+    border: 0ch;
+    height: 30px;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#cont>form>div:nth-child(5)>input{
+    background-color: lightblue;
+}
+#cont>form>div:nth-child(5)>input:hover{
+    background-color: pink;
+    color: black;
+}
