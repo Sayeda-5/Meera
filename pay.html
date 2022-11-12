@@ -5,9 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment</title>
+    <style>
+        body{
+            margin: 50px auto;
+        }
+        #cont{
+            text-align: center;
+            display: grid;
+            gap: 30px;
+            
+        }
+        #cont>form>div>input{
+            align-items: center;
+            width: 60%;
+            margin-bottom: 15px;
+            border: 0ch;
+            height: 30px;
+            align-items: center;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+        #cont>form>div:nth-child(5)>input{
+            background-color: lightblue;
+        }
+        #cont>form>div:nth-child(5)>input:hover{
+            background-color: pink;
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    <div>
+    <div id="cont">
         <form action="" id="form">
             <div>
                 <input type="text" placeholder="Enter name" id="name">
@@ -46,7 +73,7 @@
         }else{
             LSdata.push(obj);
             localStorage.setItem("payment", JSON.stringify(LSdata))
-            window.location.href="HomePage.html"
+            window.location.href="otp.html"
         }
     })
 </script>

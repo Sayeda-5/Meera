@@ -5,9 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OTP/-MEERA</title>
+    <style>
+        body{
+            margin: 50px auto;
+            margin-left: 50px;
+        }
+        #d{
+            text-align: center;
+            display: grid;
+            gap: 30px;
+        }
+        #d>div{
+            text-align: center;
+            padding: 10px;
+        }
+        #d>div>input{
+            /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+            height: 30px;
+        }
+        #d>div>button{
+            background-color: lightblue;
+            color: aliceblue;
+            height: 30px;
+            width: 100px;
+            border: 0ch;
+        }
+        
+        #d>div>button:hover{
+            background-color: pink;
+            
+        }
+    </style>
 </head>
 <body>
-    <div>
+    <div id="d">
         <div>
             <input type="text" placeholder="OTP" id="otp">
         </div>
@@ -24,7 +55,7 @@
         event.preventDefault();
         if(user.value=="1234"){
             alert("Payment Successful")
-            window.location.href="HomePage.html"
+            window.location.href="Track.html"
         }else{
             alert("Incorrect OTP")
         }
