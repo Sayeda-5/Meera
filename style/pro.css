@@ -48,3 +48,15 @@ body {
     text-align: center;
     padding: 10px;
 }
+#text{
+    width: 150px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+#search{
+    border: 0ch;
+}
+#sc{
+    width: 20px;
+}

@@ -99,3 +99,15 @@ h2{
     margin: 50px auto;
     justify-content: space-evenly;
 }
+#text{
+    width: 150px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+}
+#search{
+    border: 0ch;
+}
+#sc{
+    width: 20px;
+}
