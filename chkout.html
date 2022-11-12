@@ -48,21 +48,25 @@
     color: rgb(189, 149, 160);
     
 }
-#cont>div>input{
+#cont>div>form>div{
+    margin-bottom: 20px;
+}
+#cont>div>form>div>input{
     width: 75%;
     height: 50px;
     border: 0px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-#cont>div>a>button{
+#cont>div>form>div>a>button{
     background-color: lightblue;
     color: aliceblue;
     width: 50%;
     border: 0px;
     height: 50px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    
-
+}
+#cont>div>form>div>a>button:hover{
+    background-color: pink;
 }
     </style>
 </head>
@@ -99,27 +103,49 @@
 
     <div id="cont">
         <div><h1>Checkout</h1></div>
-        <div>        
-            <input type="text" name="" placeholder="Your Name" id="name">
-       </div>
-       <div>
-            <input type="number" name="" id="num" placeholder="Your Phone Number">
-       </div>
-       <div>
-            <input type="text" id="address" placeholder="Your Address">
-
-       </div>
-       <div>
-                <a href="pay.html"><button id="pay">CLICK HERE TO PAY</button></a>
-
-       </div>
+        <div>
+            <form action="">
+                <div>
+                    <input type="text" name="" placeholder="Your Name" id="name">
+                </div>
+                <div>
+                    <input type="number" name="" id="num" placeholder="Your Phone Number">
+               </div>
+               <div>
+                    <input type="text" id="address" placeholder="Your Address">
+                </div>
+                <div>
+                    <a href="pay.html"><button id="pay">CLICK HERE TO PAY</button></a>
+               </div>
+            </form>
+        </div>
+        
         
     </div>
 </body>
 </html>
 <script>
-    let pay= document.querySelector("#pay")
-    pay.addEventListener("click", function(){
-        windaw.loaction.hrf= "pay.html"
-    })
+    let chk= document.querySelector("form")
+    let LSdata=[];
+chk.addEventListener("submit", pay)
+
+function pay(){
+    event.preventDefault()
+    let obj={
+        name: chk.name.value,
+        phone: chk.num.value,
+        add: chk.address.value
+    }
+
+    if(obj.name==""||obj.phone=="" || obj.add==""){
+        alert ("Fill all the infomation")
+    }
+    else{
+        LSdata.push(obj);
+        localStorage.setItem("money", JSON.stringify(LSdata))
+        window.location.href='pay.html'
+    }
+}
+
+    
 </script>
