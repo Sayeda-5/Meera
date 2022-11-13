@@ -14,7 +14,7 @@ function login(event){
         if(obj.email==e.email){
             if(obj.pass==e.pass){
                 alert("Successful")
-                window.location.href='HomePage.html'
+                window.location.href='index.html'
             }
             else{
                 alert("Failed")
