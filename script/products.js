@@ -83,4 +83,3 @@ let arr=[];
 
     displaycard(arr);
 }
-
